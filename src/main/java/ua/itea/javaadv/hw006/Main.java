@@ -66,10 +66,6 @@ public class Main {
                 return;
             }
 
-//            if (StringUtils.isEmpty(password)) {
-//                System.out.println("Empty password!");
-//            }
-
             if (!NumberUtils.isParsable(port)) {
                 System.out.println("Port is not a number!");
             }
@@ -102,6 +98,7 @@ public class Main {
         Scanner commands = new Scanner(System.in);
 
         try {
+            System.out.println("You may use list/get/put/exit.");
             while (true) {
                 System.out.print("command: > ");
                 String command = commands.nextLine();
@@ -174,7 +171,7 @@ public class Main {
                         System.out.println("Bye...");
                         break;
                     } else {
-                        System.out.println("Unknown command, you may use list/put/get/exit. Try again.");
+                        System.out.println("Unknown command, you may use list/get/put/exit. Try again.");
                     }
                 }
             }
